@@ -9,7 +9,8 @@ function TimelineCard({data}) {
         </h2>
       </div>
       <div className="timeline-card-content">
-        <h3>{data.company}</h3>
+        <h3 className="timeline-card-header">{data.company}</h3>
+        <h4>{data.startedAt} - {data.finishedAt}</h4>
         <p>{data.position}</p>
         <p>{data.description}</p>
       </div>

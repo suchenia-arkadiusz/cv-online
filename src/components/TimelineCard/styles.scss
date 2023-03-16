@@ -1,10 +1,12 @@
+@import "../../variables";
+
 .timeline-card-container {
   transform: translate3d(0, 0, 0);
   position: relative;
   width: 14%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 500px);
   min-height: 60vh;
-  color: #464646;
+  color: $text-color;
   overflow: hidden;
   transition: width 0.5s ease;
 
@@ -17,13 +19,13 @@
   }
 
   &:after {
-    background: #fff;
+    background: $background-color;
     opacity: 1;
     transition: opacity 0.5s ease;
   }
 
   &:before {
-    background: linear-gradient(to bottom, rgba(225, 117, 118, 0) 0%, rgb(225, 117, 118) 75%);
+    background: linear-gradient(to bottom, $background-color-light 0%, $background-color-no-alpha 75%);
     z-index: 1;
     opacity: 0;
     transform: translate3d(0, 0, 0) translateY(50%);
@@ -51,6 +53,9 @@
 
     .timeline-card-date {
       filter: grayscale(0);
+      color: $text-color-hover;
+      border-top: 1px solid $text-color-hover;
+      border-bottom: 1px solid $text-color-hover;
     }
   }
 }
@@ -79,8 +84,9 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
-  border-top: 1px solid #464646;
-  border-bottom: 1px solid #464646;
+  border-top: 1px solid $text-color;
+  border-bottom: 1px solid $text-color;
+  transition: all 0.75s ease 0s;
 
   p {
     font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -100,3 +106,6 @@
   filter: grayscale(100%);
 }
 
+.timeline-card-header {
+  color: $text-color-hover;
+}

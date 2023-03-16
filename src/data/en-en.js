@@ -2,7 +2,7 @@ import {getAge} from "../common/helpers.js";
 
 export const enEn = {
   aboutHeader: "About me",
-  experienceHeader: "Experience",
+  experienceHeader: "Professional Experience",
   about: `Hi! My name is Arek and I'm ${getAge()} years old. I'm a software developer since 2015. I took my first steps in programming at the age of 15, and I'm still developing in this direction today. I've been programming in JAVA for many years, but lately I've been delving into NodeJS and React.`,
   timeline: [
     {
@@ -67,5 +67,8 @@ export const enEn = {
       position: "Student",
       description: "Computer Science"
     }
+  ],
+  header: [
+    "Resume", "Projects"
   ]
 }

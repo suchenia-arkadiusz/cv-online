@@ -1,17 +1,23 @@
+@import "variables";
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.2em;
+  line-height: 1.7em;
   font-weight: 400;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #242424;
-  color: #464646;
+  background-color: $background-color;
+  color: $text-color;
 }
 
 h1 {

@@ -1,12 +1,42 @@
+@import "../../variables";
+
+.header-container {
+  background-color: $background-color-light;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  box-shadow: 0 5px 10px black;
+  gap: 20px;
+  padding: 0 20px;
+}
+
 .language-button {
-  float: right;
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
   margin: 0 5px;
+  border-bottom: 1px solid $alpha;
+  transition: all 0.75s ease 0s;
+}
+
+.language-button:hover {
+  border-bottom: 1px solid $text-color-hover;
 }
 
 .header-language-icon {
   width: 32px;
+}
+
+.header-menu-item {
+  font-size: 1.5rem;
+  border-bottom: 1px solid $alpha;
+  transition: all 0.75s ease 0s;
+}
+
+.header-menu-item:hover {
+  color: $text-color-hover;
+  border-bottom: 1px solid $text-color-hover;
+  cursor: pointer;
 }

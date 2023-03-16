@@ -5,7 +5,7 @@ import {enEn} from "../data/en-en.js";
 export const LanguageContext = createContext()
 
 export const LanguageController = ({children}) => {
-  const [data, setData] = useState(plPl)
+  const [data, setData] = useState(enEn)
 
   const localizedData = [
     {

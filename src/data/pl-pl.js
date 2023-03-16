@@ -67,5 +67,8 @@ export const plPl = {
       position: "Uczeń",
       description: "Kierunek Informatyka"
     }
+  ],
+  header: [
+    "CV", "Projekty"
   ]
 }

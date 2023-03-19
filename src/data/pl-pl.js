@@ -1,9 +1,17 @@
 import {getAgeInPolish} from "../common/helpers.js";
 
 export const plPl = {
+  greetings: ["Cześć", "Jestem Arek", "JAVA & React developer"],
   aboutHeader: "O mnie",
   experienceHeader: "Doświadczenie zawodowe",
-  about: `Cześć! Jestem Arek, mam ${getAgeInPolish()} i jestem aktywnym zawodowo programistą od ${new Date().getFullYear() - 2015} lat. Swoją przygodę z programowaniem zacząłem w wieku 15 lat i do dziś rozwijam się w tym kierunku. Od wielu lat programuję w języku JAVA, jednak ostatnio zagłębiam się w NodeJS oraz React.`,
+  about: [
+    `Cześć! Jestem Arek, mam ${getAgeInPolish()} i jestem aktywnym zawodowo programistą od ${new Date().getFullYear() - 2015} lat. Swoją przygodę z programowaniem zacząłem w wieku 15 lat i do dziś rozwijam się w tym kierunku. Od wielu lat programuję w języku JAVA, jednak ostatnio zagłębiam się w NodeJS oraz React.`,
+    "Podstawą pracy programisty powinna być przede wszystkim dobra organizacja czasu pracy. Podczas swojej pracy" +
+    " dokładam wszelkich starań do zorganizowania swojego czasu tak, aby wykonywać swoje zadania w jak najkrótszym" +
+    " czasie oraz z jak najlepszą jakością. Moim zdaniem każda aplikacja musi mieć napisane conajmniej testy" +
+    " jednostkowe, wtedy możemy mieć pewność, że rozwiązuje ona problemy biznesowe w poprawny sposób. Po godzinach" +
+    " swojej pracy rozwijam swoje prywatne projekty oraz uczę się nowych technologii."
+  ],
   timeline: [
     {
       year: "2020",

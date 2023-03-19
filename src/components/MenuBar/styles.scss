@@ -1,0 +1,41 @@
+@import "../../variables";
+
+.menu-bar-container {
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  color: $color-white;
+}
+
+.language-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 5px;
+  border-bottom: 1px solid $alpha;
+  transition: all 0.75s ease 0s;
+}
+
+.language-button:hover {
+  border-bottom: 1px solid $text-color-hover;
+}
+
+.menu-bar-language-icon {
+  width: 32px;
+}
+
+.menu-bar-item {
+  font-size: 1.5rem;
+  border-bottom: 1px solid $alpha;
+  transition: all 0.75s ease 0s;
+}
+
+.menu-bar-item:hover {
+  color: $text-color-hover;
+  border-bottom: 1px solid $text-color-hover;
+  cursor: pointer;
+}

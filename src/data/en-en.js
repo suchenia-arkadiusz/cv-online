@@ -1,9 +1,13 @@
 import {getAge} from "../common/helpers.js";
 
 export const enEn = {
+  greetings: ["Hello", "I'm Arek", "JAVA & React developer"],
   aboutHeader: "About me",
   experienceHeader: "Professional Experience",
-  about: `Hi! My name is Arek and I'm ${getAge()} years old. I'm a software developer since 2015. I took my first steps in programming at the age of 15, and I'm still developing in this direction today. I've been programming in JAVA for many years, but lately I've been delving into NodeJS and React.`,
+  about: [
+    `Hi! My name is Arek and I'm ${getAge()} years old. I'm a software developer since 2015. I took my first steps in programming at the age of 15, and I'm still developing in this direction today. I've been programming in JAVA for many years, but lately I've been delving into NodeJS and React.`,
+    "The basis of a programmer's work should be, first of all, good organization of working time. During my work I make every effort to organize my time so that I can perform my tasks in the shortest possible time and with the best possible effect. In my opinion, every application must have at least unit tests so that we can be sure that it solves the client's business problems correctly. After working hours I develop my personal projects and learn new technologies."
+  ],
   timeline: [
     {
       year: "2020",

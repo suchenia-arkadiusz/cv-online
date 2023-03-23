@@ -1,111 +1,66 @@
 @import "../../variables";
 
 .timeline-card-container {
-  transform: translate3d(0, 0, 0);
-  position: relative;
-  width: 14%;
-  height: calc(100vh - 500px);
-  min-height: 60vh;
-  color: $text-color;
-  overflow: hidden;
-  transition: width 0.5s ease;
 
-  &:before, &:after {
-    transform: translate3d(0, 0, 0);
-    content: '';
-    position: absolute;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-  }
-
-  &:after {
-    background: $background-color;
-    opacity: 1;
-    transition: opacity 0.5s ease;
-  }
-
-  &:before {
-    background: linear-gradient(to bottom, $background-color-gray 0%, $background-color-no-alpha 75%);
-    z-index: 1;
-    opacity: 0;
-    transform: translate3d(0, 0, 0) translateY(50%);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-
-  &:hover {
-    width: 30% !important;
-
-    &:after {
-      opacity: 0;
-    }
-
-    &:before {
-      opacity: 1;
-      transform: translate3d(0, 0, 0) translateY(0);
-      transition: opacity 1s ease, transform 1s ease 0.25s;
-    }
-
-    .timeline-card-content {
-      opacity: 1;
-      transform: translateY(0);
-      transition: all 0.75s ease 0.5s;
-    }
-
-    .timeline-card-date {
-      filter: grayscale(0);
-      color: $text-color-hover;
-      border-top: 1px solid $text-color-hover;
-      border-bottom: 1px solid $text-color-hover;
-    }
-  }
 }
 
 .timeline-card-content {
-  transform: translate3d(0, 0, 0) translateY(25px);
   position: relative;
-  z-index: 1;
-  text-align: center;
-  margin: 0 1.618em;
-  top: 55%;
-  opacity: 0;
+  background-color: $background-color-gray;
+  width: 850px;
+  z-index: 2;
+  padding: 20px;
 
   h1 {
-    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
-    color: #1779cf;
-    font-size: 1.44rem;
-    font-weight: normal;
+    font-size: 3rem;
+    line-height: 58px;
   }
-}
 
-.timeline-card-date {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: 1;
-  border-top: 1px solid $text-color;
-  border-bottom: 1px solid $text-color;
-  transition: all 0.75s ease 0s;
+  h1::before {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 8px;
+    background-color: $color-red;
+    top: 78px;
+    z-index: 20;
+  }
+
+  h2 {
+    margin-top: 24px;
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
 
   p {
-    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 1.728rem;
-    line-height: 0;
+    margin-top: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 }
 
-.tl-bg {
-  transform: translate3d(0, 0, 0);
+.left.timeline-card-content::after {
+  content: '';
   position: absolute;
-  width: 100%; height: 100%;
-  top: 0; left: 0;
-  background-size: cover;
-  background-position: center center;
-  transition: filter 0.5s ease;
-  filter: grayscale(100%);
+  left: -50px;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  background-color: $color-gray;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  z-index: 10;
 }
 
-.timeline-card-header {
-  color: $text-color-hover;
+.right.timeline-card-content::after {
+  content: '';
+  position: absolute;
+  left: 918px;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  background-color: $color-gray;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  z-index: 10;
 }

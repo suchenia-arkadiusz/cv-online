@@ -1,21 +1,28 @@
 import './styles.scss'
+import {useEffect, useState} from "react";
 
-function TimelineCard({data}) {
+export const TimelineCard = ({data, index}) => {
+  const [cssStyle, setCssStyle] = useState("left")
+
+  useEffect(() => {
+    setCssStyle(index % 2 === 0 ? "right" : "left");
+  }, [])
+
   return (
-    <div className="timeline-card-container">
-      <div className="timeline-card-date">
+    <div className={`timeline-card-container ${cssStyle}`}>
+      <div className={`timeline-card-date ${cssStyle}`}>
         <h2>
-          {data.year}
+          {data.startedAt} - {data.finishedAt}
         </h2>
       </div>
-      <div className="timeline-card-content">
-        <h3 className="timeline-card-header">{data.company}</h3>
-        <h4>{data.startedAt} - {data.finishedAt}</h4>
-        <p>{data.position}</p>
+      <div className={`timeline-card-content ${cssStyle}`}>
+        <h1>{data.company}</h1>
+        <h2>{data.position}</h2>
         <p>{data.description}</p>
+      </div>
+      <div className="timeline-card-dot-container">
+        <div className="timeline-card-gray-dot"></div>
       </div>
     </div>
   )
 }
-
-export default TimelineCard

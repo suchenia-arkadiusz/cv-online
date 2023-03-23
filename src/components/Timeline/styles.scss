@@ -1,0 +1,19 @@
+@import "../../variables";
+
+.timeline-container {
+  padding: 20px;
+}
+
+.timeline-red-dot {
+  position: absolute;
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  background-color: $color-red;
+  border-radius: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+}
+
+
+

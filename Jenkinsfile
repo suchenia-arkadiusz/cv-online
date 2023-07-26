@@ -5,6 +5,7 @@ pipeline {
     stage('Install dependencies') {
       steps {
          sh '''
+          source ~/.nvm/nvm.sh &>/dev/null
           nvm install
           echo "npm install..."
           npm ci
@@ -14,6 +15,7 @@ pipeline {
     stage('Build application') {
       steps {
         sh '''
+          source ~/.nvm/nvm.sh &>/dev/null
           nvm install
           echo "build app..."
           npm run build

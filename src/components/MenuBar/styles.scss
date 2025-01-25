@@ -31,11 +31,13 @@
 .menu-bar-item {
   font-size: 1.5rem;
   border-bottom: 1px solid $alpha;
-  transition: all 0.75s ease 0s;
+  transition: all 0.3s ease 0s;
+  padding: 5px;
 }
 
 .menu-bar-item:hover {
   color: $text-color-hover;
-  border-bottom: 1px solid $text-color-hover;
   cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
 }

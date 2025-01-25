@@ -13,7 +13,7 @@ export const Header = () => {
       <img src={picture} className="header-picture" alt="picture"/>
       <div className="header-greetings">
         <p className="header-paragraph">{data.greetings[0]}</p>
-        <h1>{data.greetings[1]}</h1>
+        <h1 className="header-name">{data.greetings[1]}</h1>
         <p className="header-paragraph-position">{data.greetings[2]}</p>
       </div>
     </div>

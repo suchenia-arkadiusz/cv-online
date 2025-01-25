@@ -1,0 +1,42 @@
+@import "../../variables";
+
+#skills-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 24px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 220px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 112px;
+
+  .rating-red-star {
+    display: flex;
+    flex-direction: row;
+    color: $color-red-light;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .rating-gray-star {
+    display: flex;
+    flex-direction: row;
+    color: $color-gray;
+    width: 112px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}

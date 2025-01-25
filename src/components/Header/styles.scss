@@ -25,12 +25,16 @@
     line-height: 19px;
   }
 
-  h1 {
+  .header-name {
     font-size: 4rem;
     text-decoration: none;
     margin-top: 6px;
     line-height: 77px;
     color: $color-red;
+  }
+
+  .header-name::before {
+    display: none;
   }
 
   .header-paragraph-position {

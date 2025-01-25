@@ -8,13 +8,15 @@ export const About = () => {
 
   return (
     <div className="about-container">
-      <div className="about-left-column">
-        <div className="about-picture-border"></div>
-        <img src={picture} className="about-picture" alt="picture"/>
-      </div>
-      <div className="about-right-column">
-        <h1>{data.aboutHeader}</h1>
-        {data.about.map(text => <p>{text}</p>)}
+      <div className="about-content">
+        <div className="about-left-column">
+          <div className="about-picture-border"></div>
+          <img src={picture} className="about-picture" alt="picture"/>
+        </div>
+        <div className="about-right-column">
+          <h1>{data.aboutHeader}</h1>
+          {data.about.map(text => <p>{text}</p>)}
+        </div>
       </div>
     </div>
   )

@@ -42,3 +42,54 @@
 .app-content-paragraph {
   font-size: 1.5rem;
 }
+
+h1 {
+  font-size: 3rem;
+  line-height: 58px;
+}
+
+h1::before {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 8px;
+  background-color: $color-red-medium;
+  top: 58px;
+  z-index: 20;
+}
+
+h2 {
+  margin-top: 24px;
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+h3 {
+  margin-top: 24px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+p {
+  margin-top: 24px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+#page-content {
+  margin: 72px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1720px;
+  gap: 72px;
+}
+
+#experience, #education, #skills {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  width: 100%;
+}

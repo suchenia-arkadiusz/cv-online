@@ -15,7 +15,7 @@ export const About = () => {
         </div>
         <div className="about-right-column">
           <h1>{data.aboutHeader}</h1>
-          {data.about.map(text => <p>{text}</p>)}
+          {data.about.map((text, index) => <p key={index}>{text}</p>)}
         </div>
       </div>
     </div>

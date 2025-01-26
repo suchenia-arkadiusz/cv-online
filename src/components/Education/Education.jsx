@@ -14,7 +14,7 @@ const Education = () => {
         company: element.school,
         position: element.degree,
         description: element.faculty
-      })).map((element, index) => <TimelineCard data={element} index={index} isEducation/>)}
+      })).map((element, index) => <TimelineCard data={element} index={index} isEducation  key={`${element.company}-${element.startedAt}-${element.finishedAt}`}/>)}
     </div>
   )
 }

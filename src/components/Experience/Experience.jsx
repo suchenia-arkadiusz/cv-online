@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     <div id="experience">
       <h1>{data.experienceHeader}</h1>
-      {data.experienceTimeline.map((element, index) => <TimelineCard data={element} index={index}/>)}
+      {data.experienceTimeline.map((element, index) => <TimelineCard data={element} index={index} key={`${element.company}-${element.startedAt}-${element.finishedAt}`}/>)}
     </div>
   )
 }

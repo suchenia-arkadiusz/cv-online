@@ -2,6 +2,7 @@ import {useContext} from "react";
 import {LanguageContext} from "../../contexts/LanguageContext.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import "./styles.scss";
+import Tooltip from "../Tooltip/Tooltip.jsx";
 
 const Skills = () => {
   const {data} = useContext(LanguageContext)
@@ -9,7 +10,9 @@ const Skills = () => {
   const renderSkill = (skill) => (
     <div className="skill" key={skill.name}>
       <h3>{skill.name}</h3>
-      {renderRating(skill.level)}
+      <Tooltip tooltipText={skill.level}>
+        {renderRating(skill.level)}
+      </Tooltip>
     </div>
   )
 

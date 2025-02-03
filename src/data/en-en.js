@@ -1,4 +1,8 @@
 import {getAge} from "../common/helpers.js";
+import asWikiIcon from "../assets/projects/as-wiki/icon.svg";
+import asWikiFirstPicture from "../assets/projects/as-wiki/as-wiki-1.png";
+import asWikiSecondPicture from "../assets/projects/as-wiki/as-wiki-2.png";
+import cvIcon from "../assets/projects/cv-online/icon.svg";
 
 export const enEn = {
   greetings: ["Hello", "I'm Arek", "Fullstack Software Developer"],
@@ -132,6 +136,70 @@ export const enEn = {
     }
   ],
   header: [
-    "Resume", "Projects"
+    {
+      name: "Resume",
+      url: "/"
+    },
+    {
+      name: "Projects",
+      url: "/projects"
+    }
+  ],
+  goToProjectLabel: "Go To Project Details",
+  projects: [
+    {
+      id: "as-wiki",
+      title: "AS Wiki",
+      icon: asWikiIcon,
+      shortDescription: "Przez wiele lat testowałem różne narzędzia do przechowywania swoich notatek," +
+        " dokumentacji moich wewnętrznych projektów, itp. Znalazłem wiele ciekawych narzędzi, jak i wiele takich," +
+        " które nie przypadły mi do gustu. Zacząłem zauważać, że nawet przy tych ciekawych, zawsze czegoś mi" +
+        " brakowało, albo formatowanie kodu nie było odpowiednie (dla mnie), albo ogólnie UI był niezbyt atrakcyjny," +
+        " nawigacja pozostawiała wiele do życzenia, albo po prostu nie dało się tego uruchomić na prywatnym" +
+        " serwerze.",
+      description: "<p>Przez wiele lat testowałem różne narzędzia do przechowywania swoich notatek," +
+        " dokumentacji moich wewnętrznych projektów, itp. Znalazłem wiele ciekawych narzędzi, jak i wiele takich," +
+        " które nie przypadły mi do gustu. Zacząłem zauważać, że nawet przy tych ciekawych, zawsze czegoś mi" +
+        " brakowało, albo formatowanie kodu nie było odpowiednie (dla mnie), albo ogólnie UI był niezbyt atrakcyjny," +
+        " nawigacja pozostawiała wiele do życzenia, albo po prostu nie dało się tego uruchomić na prywatnym" +
+        " serwerze.</p><p>Wtedy narodził się pomysł, aby spróbować napisać własną aplikację, którą będzie można" +
+        " uruchomić lokalnie i mieć do niej dostęp zewsząd.</p><p>Główne cechy:</p><ul><li>możliwość lokalnej" +
+        " instalacji" +
+        " za pomocą Dockera</li><li>edycja dokumentów za pomocą formatu Markdown</li><li>specjalne style dla kodu" +
+        " źródłowego</li><li>możliwość grupowania w projekty</li><li>możliwość tworzenia" +
+        " podstron</li><li>możliwość nadawania uprawnień do konkretnej strony lub projektu - jeśli strona nie" +
+        " posiada uprawnień, wtedy są wyszukiwane uprawnienia w górę do rodzica, potem do rodzica rodzica itd. aż do" +
+        " projektu</li><li>obsługa wielu użytkowników oraz grup użytkowników</li></ul><p>Oczywiście to rozwiązanie" +
+        " nie jest idealne, ma swoje błędy, niedociągnięcia, ale na moje potrzeby w 100%" +
+        " wystarcza.</p><h2>Technologie użyte w projekcie</h2><ul><li>React</li><li>NodeJS</li><li>TypeScript" +
+        " i JavaScript</li><li>PostgreSQL</li><li>GitHub Actions</li><li>Docker</li></ul><p>Oczywiście nie wszystko" +
+        " tworzyłem sam od zera, do niektórych rzeczy jak edycja oraz wyświetlanie dokumentów w formacie Markdown," +
+        " połączenie z bazą danych, REST API, szyfrowanie haseł itp. używałem gotowych, sprawdzonych bibliotek," +
+        " które są darmowe.</p><h2>Link do repozytorium:</h2><a href='https://github.com/suchenia-arkadiusz/as-wiki'" +
+        " target='_blank'>https://github.com/suchenia-arkadiusz/as-wiki</a><h2>Zrzuty ekranu</h2><div" +
+        " id='images-container'><a href=" + asWikiFirstPicture + " target='_blank'><img src=" + asWikiFirstPicture + " alt='AS" +
+        " Wiki screenshot' /></a><a href=" + asWikiSecondPicture + " target='_blank'><img src=" + asWikiSecondPicture +
+        " alt='AS Wiki screenshot' /></a></div>"
+    },{
+      id: "cv-online",
+      title: "CV",
+      icon: cvIcon,
+      shortDescription: "Projekt został stworzony w celu udostępnienia mojego aktualnego doświadczenia zawodowego oraz" +
+        " jako moja wizytówka. Wiem, że standardem jest posiadanie swojego 'papierowego' CV, które można wysłać do" +
+        " osoby rekrutującej, natomiast pomyślałem, że takie rozwiązanie może się sprawdzić jako 'early access'" +
+        " mojego CV. Takie rozwiązanie niesie ze sobą jedną, ale ważną dla mnie rzecz - może być łatwo i szybko" +
+        " aktualizowane, dzięki czemu zawarte tutaj informacje, zawsze będą aktualne.",
+      description: "<p>Projekt został stworzony w celu udostępnienia mojego aktualnego doświadczenia zawodowego oraz" +
+        " jako moja wizytówka. Wiem, że standardem jest posiadanie swojego 'papierowego' CV, które można wysłać do" +
+        " osoby rekrutującej, natomiast pomyślałem, że takie rozwiązanie może się sprawdzić jako 'early access'" +
+        " mojego CV. Takie rozwiązanie niesie ze sobą jedną, ale ważną dla mnie rzecz - może być łatwo i szybko" +
+        " aktualizowane, dzięki czemu zawarte tutaj informacje, zawsze będą aktualne.</p><h2>Technologie użyte w" +
+        " projekcie</h2><ul><li>React</li><li>JavaScript</li></ul><h2>Link do repozytorium:</h2>" +
+        "<a href='https://github.com/suchenia-arkadiusz/cv-online'" +
+        " target='_blank'>https://github.com/suchenia-arkadiusz/cv-online</a><h2>Zrzuty ekranu</h2><div" +
+        " id='images-container'><a href=" + asWikiFirstPicture + " target='_blank'><img src=" + asWikiFirstPicture + " alt='AS" +
+        " Wiki screenshot' /></a><a href=" + asWikiSecondPicture + " target='_blank'><img src=" + asWikiSecondPicture +
+        " alt='AS Wiki screenshot' /></a></div>"
+    }
   ]
 }

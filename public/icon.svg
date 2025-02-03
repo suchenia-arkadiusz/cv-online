@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient9">
+      <stop
+         style="stop-color:#a41717;stop-opacity:1;"
+         offset="0.49712643"
+         id="stop9" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0.5"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4">
+      <stop
+         style="stop-color:#a41717;stop-opacity:1;"
+         offset="0.50287354"
+         id="stop5" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0.50287354"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1-1">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0.5"
+         id="stop1" />
+      <stop
+         style="stop-color:#a41717;stop-opacity:1;"
+         offset="0.5"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient1-1"
+       id="linearGradient2"
+       x1="11.347407"
+       y1="61.768009"
+       x2="105.34135"
+       y2="61.768009"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0638983,0,0,1.0638984,-12.072486,-15.714881)" />
+    <linearGradient
+       xlink:href="#linearGradient4"
+       id="linearGradient6"
+       x1="11.347407"
+       y1="61.768009"
+       x2="105.34135"
+       y2="61.768009"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0638983,0,0,1.0638984,-12.072486,-15.714881)" />
+    <linearGradient
+       xlink:href="#linearGradient9"
+       id="linearGradient10"
+       x1="17.2113"
+       y1="49.999996"
+       x2="84.789474"
+       y2="49.999996"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="pad"
+       gradientTransform="translate(0.7256998,-4.9723244e-4)" />
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:url(#linearGradient2);stroke:url(#linearGradient6);stroke-width:0.744729;stroke-linecap:round"
+       id="rect1"
+       width="99.255272"
+       height="99.255272"
+       x="0.3723644"
+       y="0.3723644"
+       rx="5.3194914"
+       ry="5.3194919" />
+    <text
+       xml:space="preserve"
+       style="font-size:50.8px;fill:url(#linearGradient10);fill-opacity:1;stroke:none;stroke-width:0.7;stroke-linecap:round;stroke-opacity:1"
+       x="16.000999"
+       y="68.198601"
+       id="text6"><tspan
+         id="tspan6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:Lato;-inkscape-font-specification:Lato;fill:url(#linearGradient10);fill-opacity:1;stroke:none;stroke-width:0.7;stroke-opacity:1"
+         x="16.000999"
+         y="68.198601">CV</tspan></text>
+  </g>
+</svg>

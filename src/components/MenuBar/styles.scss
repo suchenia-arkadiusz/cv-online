@@ -1,5 +1,9 @@
 @import "../../variables";
 
+$menu-item-animation: all 0.75s ease 0s;
+$menu-item-border-bottom: 1px solid $alpha;
+$menu-item-border-bottom-hover: 1px solid $color-white;
+
 .menu-bar-container {
   height: 100px;
   display: flex;
@@ -16,12 +20,12 @@
   cursor: pointer;
   padding: 0;
   margin: 0 5px;
-  border-bottom: 1px solid $alpha;
-  transition: all 0.75s ease 0s;
+  transition: $menu-item-animation;
+  border-bottom: $menu-item-border-bottom;
 }
 
 .language-button:hover {
-  border-bottom: 1px solid $text-color-hover;
+  border-bottom: $menu-item-border-bottom-hover;
 }
 
 .menu-bar-language-icon {
@@ -29,15 +33,29 @@
 }
 
 .menu-bar-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $color-white;
   font-size: 1.5rem;
-  border-bottom: 1px solid $alpha;
-  transition: all 0.3s ease 0s;
+  transition: $menu-item-animation;
   padding: 5px;
+  border-bottom: $menu-item-border-bottom;
 }
 
 .menu-bar-item:hover {
-  color: $text-color-hover;
+  border-bottom: $menu-item-border-bottom-hover;
+}
+
+.menu-bar-social {
   cursor: pointer;
-  background-color: #fff;
-  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 5px;
+  border: none;
+  transition: $menu-item-animation;
+  border-bottom: $menu-item-border-bottom;
+}
+
+.menu-bar-social:hover {
+  border-bottom: $menu-item-border-bottom-hover;
 }

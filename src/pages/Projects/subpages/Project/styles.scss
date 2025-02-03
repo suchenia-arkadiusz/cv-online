@@ -1,0 +1,42 @@
+#project-container {
+  position: relative;
+  h1 {
+    width: 100%;
+  }
+
+  div {
+    position: relative;
+
+    section {
+      position: relative;
+
+      ul {
+        margin-left: 50px;
+      }
+
+      #images-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 48px;
+        margin-top: 24px;
+
+        img {
+          width: 400px;
+          height: 300px;
+          display: inline-block;
+          border: 1px solid #00000020;
+          border-radius: 12px;
+          object-fit: contain;
+          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+          transition: all 0.75s ease 0s;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,12 +5,13 @@
   height: 600px;
   background: linear-gradient(to right, $background-color 60%, $color-red 60%);
   z-index: 1;
+  overflow: hidden;
 }
 
 .header-picture {
   position: absolute;
-  width: 400px;
-  height: 630px;
+  width: 368px;
+  height: 580px;
   top: 20px;
   right: calc(40% - 180px);
   z-index: 1;

@@ -24,17 +24,6 @@
   min-width: 350px;
 }
 
-.timeline {
-  display: flex;
-  background-color: $background-color;
-
-  &:hover {
-    .tl-item {
-      width: 23.3333%;
-    }
-  }
-}
-
 .app-content {
   padding: 20px;
 }
@@ -46,16 +35,17 @@
 h1 {
   font-size: 3rem;
   line-height: 58px;
-}
 
-h1::before {
-  content: '';
-  position: absolute;
-  width: 90px;
-  height: 8px;
-  background-color: $color-red-medium;
-  top: 58px;
-  z-index: 20;
+  &:before {
+    content: "CV";
+    color: $alpha;
+    position: absolute;
+    max-width: 90px;
+    height: 8px;
+    background-color: $color-red-medium;
+    top: 58px;
+    z-index: 20;
+  }
 }
 
 h2 {
@@ -76,13 +66,29 @@ p {
   line-height: 1.5rem;
 }
 
+ul {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+a {
+  color: $color-red;
+  text-decoration: underline $alpha;
+  transition: all 0.75s ease;
+
+  &:hover {
+    color: $color-red-light;
+    text-decoration: underline $color-red-light;
+  }
+}
+
 #page-content {
   margin: 72px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1720px;
+  width: 1720px;
   gap: 72px;
 }
 

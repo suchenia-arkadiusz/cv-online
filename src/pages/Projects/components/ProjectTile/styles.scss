@@ -47,6 +47,14 @@
     background: none;
     border: none;
     cursor: pointer;
+    color: $color-red;
+    border-bottom: 1px solid $alpha;
+    transition: all 0.75s ease;
+
+    &:hover {
+      border-bottom: 1px solid $color-red-light;
+      color: $color-red-light;
+    }
   }
 }
 

@@ -4,7 +4,7 @@ on: [ push ]
 
 jobs:
   Build:
-    runs-on: docker
+    runs-on: ubuntu-22.04
     steps:
       - uses: https://github.com/actions/checkout@v4
       - name: Use Node.js

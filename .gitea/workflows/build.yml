@@ -1,0 +1,20 @@
+name: Build app
+run-name: Build app
+on: [ push ]
+
+jobs:
+  Build:
+    runs-on: docker
+    steps:
+      - uses: https://github.com/actions/checkout@v4
+      - name: Use Node.js
+        uses: https://github.com/actions/setup-node@v3
+        with:
+          node-version: '18.15.0'
+      - run: npm ci
+      - run: npm run build:prod
+      - name: Upload artifact
+        uses: https://github.com/actions/upload-artifact@v4
+        with:
+          name: cv-dist
+          path: dist/*

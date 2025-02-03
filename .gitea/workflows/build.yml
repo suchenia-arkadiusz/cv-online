@@ -11,8 +11,5 @@ jobs:
       - uses: https://github.com/actions/checkout@v4
       - run: npm ci
       - run: npm run build
-      - name: Upload artifact
-        uses: https://github.com/actions/upload-artifact@v4
-        with:
-          name: cv-dist
-          path: dist/*
+      - name: Publish page
+        run: ftp -u ftp://${{ secrets.FTP_USER }}:${{ secrets.FTP_PASS }}@${{ vars.FTP_HOST }}/ dist/**/*

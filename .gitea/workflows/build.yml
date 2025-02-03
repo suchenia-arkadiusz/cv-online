@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: https://github.com/actions/checkout@v4
       - run: npm ci
-      - run: npm run build:prod
+      - run: npm run build
       - name: Upload artifact
         uses: https://github.com/actions/upload-artifact@v4
         with:

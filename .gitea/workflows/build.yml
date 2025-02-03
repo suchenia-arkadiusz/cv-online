@@ -5,12 +5,10 @@ on: [ push ]
 jobs:
   Build:
     runs-on: ubuntu-24.04
+    container:
+      image: "node:18.15.0-slim"
     steps:
       - uses: https://github.com/actions/checkout@v4
-      - name: Use Node.js
-        uses: https://github.com/actions/setup-node@v3
-        with:
-          node-version: '18.15.0'
       - run: npm ci
       - run: npm run build:prod
       - name: Upload artifact

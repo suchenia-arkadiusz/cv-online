@@ -3,6 +3,9 @@ import asWikiIcon from "../assets/projects/as-wiki/icon.svg";
 import asWikiFirstPicture from "../assets/projects/as-wiki/as-wiki-1.png";
 import asWikiSecondPicture from "../assets/projects/as-wiki/as-wiki-2.png";
 import cvIcon from "../assets/projects/cv-online/icon.svg";
+import cvFirstPicture from "../assets/projects/cv-online/cv-1.png";
+import cvSecondPicture from "../assets/projects/cv-online/cv-2.png";
+import cvThirdPicture from "../assets/projects/cv-online/cv-3.png";
 
 export const enEn = {
   greetings: ["Hello", "I'm Arek", "Fullstack Software Developer"],
@@ -190,9 +193,10 @@ export const enEn = {
         "</p><h2>Technologies used in the project</h2><ul><li>React</li><li>JavaScript</li></ul><h2>Link to the" +
         " repository:</h2><a href='https://github.com/suchenia-arkadiusz/cv-online'" +
         " target='_blank'>https://github.com/suchenia-arkadiusz/cv-online</a><h2>Zrzuty ekranu</h2><div" +
-        " id='images-container'><a href=" + asWikiFirstPicture + " target='_blank'><img src=" + asWikiFirstPicture + " alt='AS" +
-        " Wiki screenshot' /></a><a href=" + asWikiSecondPicture + " target='_blank'><img src=" + asWikiSecondPicture +
-        " alt='AS Wiki screenshot' /></a></div>"
+        " id='images-container'><a href=" + cvFirstPicture + " target='_blank'><img src=" + cvFirstPicture + " alt='" +
+        " CV screenshot' /></a><a href=" + cvSecondPicture + " target='_blank'><img src=" + cvSecondPicture +
+        " alt='CV screenshot' /></a><a href=" + cvThirdPicture + " target='_blank'><img src=" + cvThirdPicture +
+        " alt='CV screenshot' /></a></div>"
     }
   ]
 }

@@ -17,7 +17,6 @@ jobs:
           cd dist
           touch .htaccess
           echo ${{ vars.HTACCESS_CONTENT }} >> .htaccess
-          cd ..
       - name: Publish page
         uses: https://github.com/SamKirkland/FTP-Deploy-Action@v4.3.5
         with:

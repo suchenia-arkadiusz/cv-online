@@ -6,7 +6,7 @@ jobs:
   Build:
     runs-on: ubuntu-24.04
     container:
-      image: "node:18.15.0-slim"
+      image: "node:18.15.0"
     steps:
       - uses: https://github.com/actions/checkout@v4
       - run: |

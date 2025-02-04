@@ -176,7 +176,7 @@ export const plPl = {
         " tworzyłem sam od zera, do niektórych rzeczy jak edycja oraz wyświetlanie dokumentów w formacie Markdown," +
         " połączenie z bazą danych, REST API, szyfrowanie haseł itp. używałem gotowych, sprawdzonych bibliotek," +
         " które są darmowe.</p><h2>Link do repozytorium:</h2><a" +
-        " class='repo-link' href='https://github.com/suchenia-arkadiusz/as-wiki'" +
+        " href='https://github.com/suchenia-arkadiusz/as-wiki'" +
         " target='_blank'>https://github.com/suchenia-arkadiusz/as-wiki</a><h2>Zrzuty ekranu</h2><div" +
         " id='images-container'><a href=" + asWikiFirstPicture + " target='_blank'><img src=" + asWikiFirstPicture + " alt='AS" +
         " Wiki screenshot' /></a><a href=" + asWikiSecondPicture + " target='_blank'><img src=" + asWikiSecondPicture +

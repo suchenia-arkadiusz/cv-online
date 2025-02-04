@@ -9,10 +9,15 @@ jobs:
       image: "node:18.15.0-slim"
     steps:
       - uses: https://github.com/actions/checkout@v4
-      - run: npm ci
-      - run: npm run build
+      - run: |
+          npm ci
+          npm run build
       - name: Create .htaccess file
-        run: cd dist && touch .htaccess && echo ${{ vars.HTACCESS_CONTENT }} >> .htaccess
+        run: |
+          cd dist
+          touch .htaccess
+          echo ${{ vars.HTACCESS_CONTENT }} >> .htaccess
+          cd ..
       - name: Publish page
         uses: https://github.com/SamKirkland/FTP-Deploy-Action@v4.3.5
         with:

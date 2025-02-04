@@ -72,6 +72,8 @@ ul {
 }
 
 a {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: $color-red;
   text-decoration: underline $alpha;
   transition: all 0.75s ease;
@@ -89,7 +91,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 1720px;
-  gap: 72px;
+  gap: 48px;
 }
 
 #experience, #education, #skills {

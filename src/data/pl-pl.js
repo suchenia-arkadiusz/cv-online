@@ -2,6 +2,7 @@ import {getAgeInPolish} from "../common/helpers.js";
 import asWikiIcon from "../assets/projects/as-wiki/icon.svg";
 import asWikiFirstPicture from "../assets/projects/as-wiki/as-wiki-1.png";
 import asWikiSecondPicture from "../assets/projects/as-wiki/as-wiki-2.png";
+import cvIcon from "../assets/projects/cv-online/icon.svg";
 
 export const plPl = {
   greetings: ["Cześć", "Jestem Arek", "Fullstack Software Developer"],
@@ -185,7 +186,7 @@ export const plPl = {
     },{
       id: "cv-online",
       title: "CV",
-      icon: asWikiIcon,
+      icon: cvIcon,
       shortDescription: "Przez wiele lat testowałem różne narzędzia do przechowywania swoich notatek," +
         " dokumentacji moich wewnętrznych projektów, itp. Znalazłem wiele ciekawych narzędzi, jak i wiele takich," +
         " które nie przypadły mi do gustu. Zacząłem zauważać, że nawet przy tych ciekawych, zawsze czegoś mi" +

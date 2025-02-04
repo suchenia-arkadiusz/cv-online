@@ -12,12 +12,8 @@ jobs:
       - run: |
           npm ci
           npm run build
-      - name: Create .htaccess file
-        run: |
-          cd dist
-          touch .htaccess
-          echo "${{ vars.HTACCESS_CONTENT }}"
-          ls -la
+      - name: Copy .htaccess file
+        run: cp .htaccess dist/
       - name: Publish page
         uses: https://github.com/SamKirkland/FTP-Deploy-Action@v4.3.5
         with:

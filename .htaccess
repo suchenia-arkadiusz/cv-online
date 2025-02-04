@@ -1,0 +1,11 @@
+<FilesMatch ".(html)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+RewriteEngine On
+RewriteBase /
+    RewriteRule ^indeeex\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /indeeex.html [L]
+DirectoryIndex indeeex.html index.html

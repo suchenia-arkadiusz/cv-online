@@ -16,7 +16,7 @@ jobs:
         run: |
           cd dist
           touch .htaccess
-          echo "test"
+          echo "${{ vars.HTACCESS_CONTENT }}"
           ls -la
       - name: Publish page
         uses: https://github.com/SamKirkland/FTP-Deploy-Action@v4.3.5

@@ -197,8 +197,8 @@ export const plPl = {
         " osoby rekrutującej, natomiast pomyślałem, że takie rozwiązanie może się sprawdzić jako 'early access'" +
         " mojego CV. Takie rozwiązanie niesie ze sobą jedną, ale ważną dla mnie rzecz - może być łatwo i szybko" +
         " aktualizowane, dzięki czemu zawarte tutaj informacje, zawsze będą aktualne.</p><h2>Technologie użyte w" +
-        " projekcie</h2><ul><li>React</li><li>JavaScript</li></ul><h2>Link do repozytorium:</h2>" +
-        "<a href='https://github.com/suchenia-arkadiusz/cv-online'" +
+        " projekcie</h2><ul><li>React</li><li>JavaScript</li><li>GitHub Actions</li></ul><h2>Link do" +
+        " repozytorium:</h2><a href='https://github.com/suchenia-arkadiusz/cv-online'" +
         " target='_blank'>https://github.com/suchenia-arkadiusz/cv-online</a><h2>Zrzuty ekranu</h2><div" +
         " id='images-container'><a href=" + cvFirstPicture + " target='_blank'><img src=" + cvFirstPicture + " alt='" +
         " CV screenshot' /></a><a href=" + cvSecondPicture + " target='_blank'><img src=" + cvSecondPicture +

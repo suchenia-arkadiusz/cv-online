@@ -190,8 +190,8 @@ export const enEn = {
         " know that it is standard to have your 'paper' resume to send to a recruiter, I thought that this solution" +
         " could work well as an 'early access' of my resume. Such a solution carries one thing, but important to me" +
         " - it can be easily and quickly updated, so that the information contained here, will always be up to date." +
-        "</p><h2>Technologies used in the project</h2><ul><li>React</li><li>JavaScript</li></ul><h2>Link to the" +
-        " repository:</h2><a href='https://github.com/suchenia-arkadiusz/cv-online'" +
+        "</p><h2>Technologies used in the project</h2><ul><li>React</li><li>JavaScript</li><li>GitHub" +
+        " Actions</li></ul><h2>Link to the repository:</h2><a href='https://github.com/suchenia-arkadiusz/cv-online'" +
         " target='_blank'>https://github.com/suchenia-arkadiusz/cv-online</a><h2>Zrzuty ekranu</h2><div" +
         " id='images-container'><a href=" + cvFirstPicture + " target='_blank'><img src=" + cvFirstPicture + " alt='" +
         " CV screenshot' /></a><a href=" + cvSecondPicture + " target='_blank'><img src=" + cvSecondPicture +

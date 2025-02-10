@@ -42,7 +42,11 @@
 }
 
 @media (width < $media-width) {
+  #skills-content {
+    gap: 0;
+    justify-content: space-between;
+  }
   .skill {
-    min-width: 160px;
+    min-width: 120px;
   }
 }

@@ -58,6 +58,7 @@
   .about-container {
     overflow: hidden;
     gap: 0;
+    min-height: 0;
 
     .about-content {
       margin: 0;
@@ -94,7 +95,7 @@
         padding: 24px;
 
         h1:before {
-          top: 82px;
+          top: 63px;
         }
       }
     }

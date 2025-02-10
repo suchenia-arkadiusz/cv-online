@@ -37,6 +37,10 @@
 
   .timeline-card-content {
     width: calc(100% - 48px);
+
+    h1:before {
+      top: 63px;
+    }
   }
 
   .timeline-img {

@@ -107,4 +107,56 @@ a {
     width: calc(100vw - 40px);
     margin: 72px auto;
   }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 39px;
+
+    &:before {
+      content: "CV";
+      color: $alpha;
+      position: absolute;
+      max-width: 90px;
+      height: 8px;
+      background-color: $color-red-medium;
+      top: 39px;
+      z-index: 20;
+    }
+  }
+
+  h2 {
+    margin-top: 24px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h3 {
+    margin-top: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  p {
+    margin-top: 24px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  ul {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  a {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $color-red;
+    text-decoration: underline $alpha;
+    transition: all 0.75s ease;
+
+    &:hover {
+      color: $color-red-light;
+      text-decoration: underline $color-red-light;
+    }
+  }
 }

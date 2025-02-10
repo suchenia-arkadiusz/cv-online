@@ -49,6 +49,7 @@
   .header-container {
     height: 400px;
   }
+
   .header-picture {
     width: 184px;
     height: 290px;
@@ -57,8 +58,10 @@
   }
 
   .header-greetings {
-    margin-left: 16px;
-    margin-top: 24px;
+    margin: 0;
+    left: 24px;
+    top: 24px;
+    position: absolute;
 
     .header-paragraph {
       font-size: 0.8rem;

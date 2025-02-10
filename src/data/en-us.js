@@ -198,7 +198,7 @@ export const enUS = {
         " changes to the web page - I don't have to do it manually :)</p><br /><img src=" + cvCiCd + " alt='CI/CD' />" +
         " <h2>Technologies used in the project</h2><ul><li>React</li><li>JavaScript</li><li>GitHub" +
         " Actions</li></ul><h2>Link to the repository:</h2><a href='https://github.com/suchenia-arkadiusz/cv-online'" +
-        " target='_blank'>https://github.com/suchenia-arkadiusz/cv-online</a><h2>Zrzuty ekranu</h2><div" +
+        " target='_blank'>https://github.com/suchenia-arkadiusz/cv-online</a><h2>Screenshots</h2><div" +
         " id='images-container'><a href=" + cvFirstPicture + " target='_blank'><img src=" + cvFirstPicture + " alt='" +
         " CV screenshot' /></a><a href=" + cvSecondPicture + " target='_blank'><img src=" + cvSecondPicture +
         " alt='CV screenshot' /></a><a href=" + cvThirdPicture + " target='_blank'><img src=" + cvThirdPicture +

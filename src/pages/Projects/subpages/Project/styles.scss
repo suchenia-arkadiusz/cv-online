@@ -1,5 +1,8 @@
+@import "../../../../variables";
 #project-container {
   position: relative;
+  width: 100%;
+
   h1 {
     width: 100%;
   }
@@ -9,6 +12,7 @@
 
     section {
       position: relative;
+      width: 100%;
 
       ul {
         margin-left: 50px;
@@ -35,6 +39,25 @@
           &:hover {
             opacity: 0.7;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (width < $media-width) {
+  #project-container {
+
+    div {
+
+      section {
+
+        img {
+          max-width: 100%;
+        }
+
+        #images-container {
+          flex-direction: column;
         }
       }
     }

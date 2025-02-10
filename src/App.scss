@@ -101,3 +101,10 @@ a {
   gap: 42px;
   width: 100%;
 }
+
+@media (width < $media-width) {
+  #page-content {
+    width: calc(100vw - 40px);
+    margin: 72px auto;
+  }
+}

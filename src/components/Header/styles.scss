@@ -13,7 +13,7 @@
   width: 368px;
   height: 580px;
   top: 20px;
-  right: calc(40% - 180px);
+  right: calc(40% - 184px);
   z-index: 1;
 }
 
@@ -42,5 +42,37 @@
     font-size: 1.25rem;
     line-height: 24px;
     margin-top: 6px;
+  }
+}
+
+@media (width < $media-width) {
+  .header-container {
+    height: 400px;
+  }
+  .header-picture {
+    width: 184px;
+    height: 290px;
+    top: calc(400px - 290px);
+    right: calc(40% - 92px);
+  }
+
+  .header-greetings {
+    margin-left: 16px;
+    margin-top: 24px;
+
+    .header-paragraph {
+      font-size: 0.8rem;
+    }
+
+    .header-name {
+      font-size: 2rem;
+      line-height: 38px;
+    }
+
+    .header-paragraph-position {
+      font-size: 1rem;
+      line-height: 24px;
+      margin-top: 6px;
+    }
   }
 }

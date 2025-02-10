@@ -40,3 +40,9 @@
     z-index: 0;
   }
 }
+
+@media (width < $media-width) {
+  .skill {
+    min-width: 160px;
+  }
+}

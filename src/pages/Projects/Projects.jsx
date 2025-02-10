@@ -12,14 +12,13 @@ const Projects = () => {
       <div id="projects-container">
         <PageContent>
           <h1>Projects</h1>
-          {data.projects.map((project, index) => (
+          {data.projects.map((project) => (
             <ProjectTile
               key={project.id}
               id={project.id}
               image={project.icon}
               title={project.title}
               shortDescription={project.shortDescription}
-              isLeft={index % 2 === 0}
             />
           ))}
         </PageContent>

@@ -6,6 +6,7 @@ import cvIcon from "../assets/projects/cv-online/icon.svg";
 import cvFirstPicture from "../assets/projects/cv-online/cv-1.png";
 import cvSecondPicture from "../assets/projects/cv-online/cv-2.png";
 import cvThirdPicture from "../assets/projects/cv-online/cv-3.png";
+import cvCiCd from "../assets/projects/cv-online/ci-cd.png";
 
 export const enUS = {
   greetings: ["Hello", "I'm Arek", "Fullstack Software Developer"],
@@ -189,8 +190,13 @@ export const enUS = {
       description: "<p>The project was created to share my current work experience and as my business card. While I" +
         " know that it is standard to have your 'paper' resume to send to a recruiter, I thought that this solution" +
         " could work well as an 'early access' of my resume. Such a solution carries one thing, but important to me" +
-        " - it can be easily and quickly updated, so that the information contained here, will always be up to date." +
-        "</p><h2>Technologies used in the project</h2><ul><li>React</li><li>JavaScript</li><li>GitHub" +
+        " - it can be easily and quickly updated, so that the information contained here, will always be up to" +
+        " date.</p><h2>CI/CD Integration</h2><p>In this project, I use Gitea Actions as a CI/CD Platform. It is based on" +
+        " GitHub Actions, so it can be easily moved to GitHub in the future - if needed. I use only one - master -" +
+        " branch here, and because of that, the whole process is straightforward - push changes, build, and deploy." +
+        " I use a simple Web Server, so I can make changes using an FTP connection. It helps a lot with pushing new" +
+        " changes to the web page - I don't have to do it manually :)</p><br /><img src=" + cvCiCd + " alt='CI/CD' />" +
+        " <h2>Technologies used in the project</h2><ul><li>React</li><li>JavaScript</li><li>GitHub" +
         " Actions</li></ul><h2>Link to the repository:</h2><a href='https://github.com/suchenia-arkadiusz/cv-online'" +
         " target='_blank'>https://github.com/suchenia-arkadiusz/cv-online</a><h2>Zrzuty ekranu</h2><div" +
         " id='images-container'><a href=" + cvFirstPicture + " target='_blank'><img src=" + cvFirstPicture + " alt='" +

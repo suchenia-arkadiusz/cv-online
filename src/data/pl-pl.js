@@ -6,6 +6,7 @@ import cvIcon from "../assets/projects/cv-online/icon.svg";
 import cvFirstPicture from "../assets/projects/cv-online/cv-1.png";
 import cvSecondPicture from "../assets/projects/cv-online/cv-2.png";
 import cvThirdPicture from "../assets/projects/cv-online/cv-3.png";
+import cvCiCd from "../assets/projects/cv-online/ci-cd.png";
 
 export const plPL = {
   greetings: ["Cześć", "Jestem Arek", "Programista Fullstack"],
@@ -196,8 +197,14 @@ export const plPL = {
         " jako moja wizytówka. Wiem, że standardem jest posiadanie swojego 'papierowego' CV, które można wysłać do" +
         " osoby rekrutującej, natomiast pomyślałem, że takie rozwiązanie może się sprawdzić jako 'early access'" +
         " mojego CV. Takie rozwiązanie niesie ze sobą jedną, ale ważną dla mnie rzecz - może być łatwo i szybko" +
-        " aktualizowane, dzięki czemu zawarte tutaj informacje, zawsze będą aktualne.</p><h2>Technologie użyte w" +
-        " projekcie</h2><ul><li>React</li><li>JavaScript</li><li>GitHub Actions</li></ul><h2>Link do" +
+        " aktualizowane, dzięki czemu zawarte tutaj informacje, zawsze będą" +
+        " aktualne.</p><h2>Integracja CI/CD</h2><p>W tym projekcie używam Gitea Actions jako platformę CI/CD." +
+        " Bazuje ona na GitHub Actions, dzięki czemu może być łatwo przeniesiona w przyszłości - jeśli zajdzie" +
+        " taka potrzeba. Używam tylko jednego brancha - master - dzięki czemu, cały proces budowania jest" +
+        " uproszczony - wypchnięcie zmian, budowanie, aktualizacja. Używam prostego serwera WWW, więc zmiany mogę" +
+        " aktualizować poprzez połączenie FTP. Cały proces pomaga w aktualizowaniu zmian - nie muszę tego robić" +
+        " samemu :)</p><br /><img src=" + cvCiCd + " alt='CI/CD' /><h2>Technologie użyte w projekcie </h2>" +
+        " <ul><li>React</li><li>JavaScript</li><li>GitHub Actions</li></ul><h2>Link do" +
         " repozytorium:</h2><a href='https://github.com/suchenia-arkadiusz/cv-online'" +
         " target='_blank'>https://github.com/suchenia-arkadiusz/cv-online</a><h2>Zrzuty ekranu</h2><div" +
         " id='images-container'><a href=" + cvFirstPicture + " target='_blank'><img src=" + cvFirstPicture + " alt='" +

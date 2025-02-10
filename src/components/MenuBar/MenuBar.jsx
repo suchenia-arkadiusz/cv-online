@@ -8,11 +8,17 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useNavigate} from "react-router-dom";
 
 export const MenuBar = () => {
-  const {data, setLanguage} = useContext(LanguageContext);
+  const {data, setLanguage, isEnglish, setIsEnglish} = useContext(LanguageContext);
   const navigate = useNavigate();
 
   const goToPage = (page) => {
     navigate(page)
+  }
+
+  const changeLanguage = () => {
+    console.log(isEnglish)
+    setLanguage(isEnglish ? "pl-pl" : "en-us")
+    setIsEnglish(!isEnglish)
   }
 
   return (
@@ -28,8 +34,7 @@ export const MenuBar = () => {
         onClick={() => window.open("https://www.linkedin.com/in/arkadiusz-suchenia/")}
         className="menu-bar-social"
       />
-      <button className="language-button" onClick={() => setLanguage("en-en")} ><img className="menu-bar-language-icon" src={usaFlag} alt="polish-flag"/></button>
-      <button className="language-button" onClick={() => setLanguage("pl-pl")} ><img className="menu-bar-language-icon" src={plFlag} alt="usa-flag"/></button>
+      <button className="language-button" onClick={changeLanguage} ><img className="menu-bar-language-icon" src={isEnglish ? usaFlag : plFlag} alt="polish-flag"/></button>
     </div>
   )
 }

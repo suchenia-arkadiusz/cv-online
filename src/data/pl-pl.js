@@ -7,7 +7,7 @@ import cvFirstPicture from "../assets/projects/cv-online/cv-1.png";
 import cvSecondPicture from "../assets/projects/cv-online/cv-2.png";
 import cvThirdPicture from "../assets/projects/cv-online/cv-3.png";
 
-export const plPl = {
+export const plPL = {
   greetings: ["Cześć", "Jestem Arek", "Programista Fullstack"],
   aboutHeader: "O mnie",
   experienceHeader: "Doświadczenie zawodowe",

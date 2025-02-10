@@ -1,20 +1,21 @@
 import React, {createContext, useState} from "react";
-import {plPl} from "../data/pl-pl.js";
-import {enEn} from "../data/en-en.js";
+import {plPL} from "../data/pl-pl.js";
+import {enUS} from "../data/en-us.js";
 
 export const LanguageContext = createContext()
 
 export const LanguageController = ({children}) => {
-  const [data, setData] = useState(enEn)
+  const [isEnglish, setIsEnglish] = useState(true)
+  const [data, setData] = useState(enUS)
 
   const localizedData = [
     {
       key: "pl-pl",
-      data: plPl
+      data: plPL
     },
     {
-      key: "en-en",
-      data: enEn
+      key: "en-us",
+      data: enUS
     }
   ]
 
@@ -24,7 +25,9 @@ export const LanguageController = ({children}) => {
 
   const state = {
     data,
-    setLanguage
+    setLanguage,
+    isEnglish,
+    setIsEnglish,
   }
 
   return (

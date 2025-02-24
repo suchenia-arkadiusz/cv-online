@@ -6,6 +6,9 @@
   padding: 0;
   text-align: left;
   background-color: $background-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .FlexContainer {

@@ -1,0 +1,18 @@
+@import "../../variables";
+
+footer {
+  background-color: $background-color-gray;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100px;
+  align-items: center;
+}
+
+.footer-social {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 5px;
+  border: none;
+}
